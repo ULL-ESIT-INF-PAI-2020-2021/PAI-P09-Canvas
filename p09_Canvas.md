@@ -1,5 +1,5 @@
 # Práctica 8. Programación Gráfica en JavaScript. HTML. La API Canvas.
-### Factor de ponderación: 7
+### Factor de ponderación: 8
 
 ### Objetivos
 Los objetivos de esta práctica son:
@@ -8,7 +8,7 @@ Los objetivos de esta práctica son:
 * Practicar el uso de elementos HTML básicos.
 * Practicar el uso de algunas propiedades básicas de CSS para dotar de estilo a una página web simple.
 * Poner en práctica metodologías y conceptos de Programación Orientada a Objetos en JavaScript.
-* Practicar el proceso de pruebas de software (testing) utilizando Mocha y Chai.
+* Profundizar en el uso de pruebas de software (testing) utilizando Mocha y Chai.
 
 ### Rúbrica de evaluacion del ejercicio
 Se señalan a continuación los aspectos más relevantes (la lista no es exhaustiva)
@@ -17,38 +17,46 @@ que se tendrán en cuenta a la hora de evaluar esta práctica:
 * El comportamiento del programa debe ajustarse a lo solicitado en este enunciado.
 * Deben usarse estructuras de datos adecuadas para representar los diferentes elementos que intervienen en el problema.
 * Capacidad del programador(a) de introducir cambios en el programa desarrollado.
-* Se comprobará que el código que el alumnado escribe se adhiere a las reglas de la Guía de Estilo.
+* Se comprobará que el código que el alumnado escribe se adhiere a las reglas de la 
+  [Guía de Estilo](https://google.github.io/styleguide/jsguide.html).
 * El código ha de estar documentado con [JSDoc](https://jsdoc.app/). 
   Haga que la documentación del programa generada con JSDoc esté disponible a través de una web alojada en su máquina IaaS de la asignatura.
-* El alumnado ha de acreditar su capacidad para configurar y ejecutar ESLint en sus programas.
+* El alumnado ha de acreditar su capacidad para configurar y ejecutar 
+  [ESLint](https://eslint.org/)
+  en sus programas.
 * El alumnado ha de acreditar que sabe depurar sus programas usando Visual Studio Code.
 * Se comprobarán los tests unitarios que el alumnado ha desarrollado para todos sus códigos usando Mocha y Chai, así como
   su capacidad para ejecutar esos tests unitarios desde la interfaz de VSC. 
   Todo el código de los tests que realice para desarrollar la aplicación estarán ubicados en el directorio
   `test` de proyecto.
-* Se comprobará el cubrimiento de código que se consigue con los tests usando la herramienta CodeCov y el
-  informe que la misma genera a través de una web.
+* Se comprobará el cubrimiento de código que se consigue con los tests usando la herramienta 
+  [CodeCov](https://about.codecov.io/)
+  y el informe que la misma genera a través de una web.
 * El programa debe ajustarse al paradigma de Orientación a Objetos.
 * Todo el código estará ubicado en el directorio `src` del proyecto. Use subdirectorios de éste si le resulta
   conveniente.
 
 ### El conjunto de Mandelbrot
 
-El [conjunto de Mandelbrot](https://en.wikipedia.org/wiki/Mandelbrot_set) 
-es el conjunto de números resultante de repetidas iteraciones de la siguiente expresión:
+Como es sabido, un número complejo `c` puede representarse como un punto en un espacio bidimensional, el plano
+complejo.
+El 
+[conjunto de Mandelbrot](https://es.wikipedia.org/wiki/Conjunto_de_Mandelbrot)
+es un conjunto definido en el plano complejo.
+La pertenencia de un número complejo `c` al conjunto se determina en función de la siguiente expresión:
 
 `z = z^2 + c`   [1] 
 
 donde `z` y `c` son números complejos. 
+
 La función tiene la condición inicial `z = c`. 
-Lo que habitualmente se calcula es el número de iteraciones necesarias para que `z` alcance algún valor umbral, que en este caso es:
+Lo que habitualmente se calcula es el número de iteraciones necesarias para que `z` alcance algún valor umbral
+que en el caso del conjunto de Mandelbrot es:
 
 `|z| > 2.0`     [2]
 
 Si, dentro de un número finito de iteraciones, se cumple la condición anterior, entonces se 
 considera que el punto `c` está fuera del conjunto de Mandelbrot.
-
-Como es sabido, un número complejo `c` puede representarse como un punto en un espacio bidimensional.
 
 ### La clase *Mandelbrot*
 En esta práctica se propone desarrollar una clase `Mandelbrot` 
@@ -137,5 +145,6 @@ el área estimada y el error vienen dado por las siguientes expresiones:
 > Error = Área / sqrt(N)
 
 Escriba el código para calcular el área y su error.
+
 Nótese que el número de puntos `N` que el programa utilice para calcular el área es un parámetro
 que de algún modo habrá que configurar.
