@@ -137,8 +137,5 @@ el área estimada y el error vienen dado por las siguientes expresiones:
 > Error = Área / sqrt(N)
 
 Escriba el código para calcular el área y su error.
-
-Las siguientes deben tomarse como especificaciones de la aplicación a desarrollar:
-
-* El número de puntos `N` que el programa utiliza para calcular el área del conjunto es un 
-  parámetro del programa que se introduce a través de una ventana emergente.
+Nótese que el número de puntos `N` que el programa utilice para calcular el área es un parámetro
+que de algún modo habrá que configurar.
