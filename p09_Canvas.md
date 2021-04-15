@@ -1,4 +1,4 @@
-# Práctica 8. Programación Gráfica en JavaScript. HTML. La API Canvas.
+# Práctica 8. Programación Gráfica en JavaScript. HTML. La API Canvas. El conjunto de Mandelbrot.
 ### Factor de ponderación: 8
 
 ### Objetivos
@@ -57,6 +57,10 @@ que en el caso del conjunto de Mandelbrot es:
 
 Si, dentro de un número finito de iteraciones, se cumple la condición anterior, entonces se 
 considera que el punto `c` está fuera del conjunto de Mandelbrot.
+
+[Este vídeo](https://www.youtube.com/watch?v=1uT67l5STEw) 
+puede ser un buen punto de partida para entender el conjunto de Mandelbrot y las tareas que en esta práctica se
+propone realizar.
 
 ### La clase *Mandelbrot*
 En esta práctica se propone desarrollar una clase `Mandelbrot` 
