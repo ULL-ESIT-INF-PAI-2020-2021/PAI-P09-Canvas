@@ -1,4 +1,4 @@
-# Práctica 8. Programación Gráfica en JavaScript. HTML. La API Canvas. El conjunto de Mandelbrot.
+# Práctica 9. Programación Gráfica en JavaScript. HTML. La API Canvas. El conjunto de Mandelbrot.
 ### Factor de ponderación: 8
 
 ### Objetivos
